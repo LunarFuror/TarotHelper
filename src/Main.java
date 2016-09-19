@@ -31,5 +31,11 @@ public class Main {
 		teller2.drawHand();
 		teller2.generateFullReading();
 		System.out.println(teller2.getReading());
+		
+		//now let's draw a few of our own cards and have teller read them
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println(teller.readCard(deck.drawCard()));
 	}
 }
