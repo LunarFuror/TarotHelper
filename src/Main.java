@@ -16,6 +16,13 @@ public class Main {
 		}
 		System.out.println("");
 		
+		//now let's draw a few of our own cards and have teller read them
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println(teller.readCard(deck.drawCard()));
+		System.out.println("");
+		
 		//for the teller we gave a deck let's generate a few readings drawing a new hand every time.
 		teller2.generateFullReading();
 		System.out.println(teller2.getReading());
@@ -31,11 +38,5 @@ public class Main {
 		teller2.drawHand();
 		teller2.generateFullReading();
 		System.out.println(teller2.getReading());
-		
-		//now let's draw a few of our own cards and have teller read them
-		System.out.println(teller.readCard(deck.drawCard()));
-		System.out.println(teller.readCard(deck.drawCard()));
-		System.out.println(teller.readCard(deck.drawCard()));
-		System.out.println(teller.readCard(deck.drawCard()));
 	}
 }
